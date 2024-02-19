@@ -1,0 +1,236 @@
+{
+  "userAccount": [
+    {
+      "id": 1,
+      "name": "Nguyễn Đỗ Cao Sơn",
+      "gender": "Nam",
+      "email": "sonndc1808@gmail.com",
+      "dateBirth":"24/02/1995",
+      "address": {
+        "street": "Hoàng Cầu, Q.Đống Đa",
+        "city": "Ha Noi"
+      },
+      "phone": "+84 938102823"
+    },
+    {
+      "id": 2,
+      "name": "Nguyễn Đình Tịnh",
+      "gender": "Nam",
+      "email": "tinhnd@gmail.com",
+      "dateBirth":"12/05/1998",
+      "address": {
+        "street": "11 Thái Hà, Q.Đống Đa",
+        "city": "Ha Noi"
+      },
+      "phone": "+84 123456788"
+    },
+    {
+      "id": 3,
+      "name": "Trịnh Sơn Hà",
+      "gender": "Nam",
+      "email": "hats180801@gmail.com",
+      "dateBirth":"25/08/2001",
+      "address": {
+        "street": "99 Xã Đàn, Q.Đống Đa",
+        "city": "Ha Noi"
+      },
+      "phone": "+84 918274651"
+    },
+    {
+      "id": 4,
+      "name": "Hà Kiều Anh",
+      "gender": "Nữ",
+      "email": "hkanh1102@gmail.com",
+      "dateBirth":"11/01/1999",
+      "address": {
+        "street": "96 Định Công, Q.Hoàng Mai",
+        "city": "Ha Noi"
+      },
+      "phone": "+84 368293745"
+    },
+    {
+      "id": 5,
+      "name": "Nguyễn Thu Thảo",
+      "gender": "Nữ",
+      "email": "thaont@gmail.com",
+      "dateBirth":"24/02/1995",
+      "address": {
+        "street": "126 Phạm Hồng Thái, Q.Ba Đình",
+        "city": "Ha Noi"
+      },
+      "phone": "+84 966279555"
+    },
+    {
+      "id": 6,
+      "name": "Phạm Thanh Mai",
+      "gender": "Nữ",
+      "email": "maipt@gmail.com",
+      "dateBirth":"11/01/1999",
+      "address": {
+        "street": "33 Cầu Giấy, Q.Cầu Giấy",
+        "city": "Ha Noi"
+      },
+      "phone": "+84 917716262"
+    },
+    {
+      "id": 7,
+      "name": "Lã Phương Thủy Tiên",
+      "gender": "Nữ",
+      "email": "lapitie@gmail.com",
+      "dateBirth":"16/06/2000",
+      "address": {
+        "street": "12 Trần Nhân Tông, Q.Hoàn kiếm",
+        "city": "Ha Noi"
+      },
+      "phone": "+84 368293745"
+    }
+    
+  ],
+  "employeeAccount": [
+    {
+      "id": 1,
+      "name": "Phùng Tiến Đạt",
+      "gender": "Nam",
+      "email": "datpt@gmail.com",
+      "dateBirth": "24/02/2000",
+      "position": "Marketing",
+      "phone": "+84 938102823"
+    },
+    {
+      "id": 2,
+      "name": "Dương Hoàng Hiếu",
+      "gender": "Nam",
+      "email": "hieudh@gmail.com",
+      "dateBirth": "25/07/1998",
+      "position": "Seller",
+      "phone": "+84 123456788"
+    },
+    {
+      "id": 3,
+      "name": "Nguyễn Trường Giang",
+      "gender": "Nam",
+      "email": "giangnt@gmail.com",
+      "dateBirth": "22/08/2001",
+      "position": "Seller",
+      "phone": "+84 948083535"
+    },
+    {
+      "id": 4,
+      "name": "Phạm Thanh Sơn",
+      "gender": "Nữ",
+      "email": "sonpt@gmail.com",
+      "dateBirth": "19/01/2000",
+      "position": "Marketing",
+      "phone": "+84 368293745"
+    },
+    {
+      "id": 5,
+      "name": "Kiều Hoàng Dương",
+      "gender": "Nam",
+      "email": "duongkh030101@gmail.com",
+      "dateBirth": "20/06/1995",
+      "position": "Programmer",
+      "phone": "+84 966279555"
+    },
+    {
+      "id": 6,
+      "name": "Viết Minh Hiếu",
+      "gender": "Nam",
+      "email": "hieuvm@gmail.com",
+      "dateBirth": "05/12/1999",
+      "position": "Programmer",
+      "phone": "+84 917716262"
+    },
+    {
+      "id": 7,
+      "name": "admin",
+      "gender": "Nam",
+      "email": "admin@gmail.com",
+      "dateBirth": "10/11/1991",
+      "position": "Developer",
+      "phone": "+84 368293745"
+    }
+  ],
+
+  "products": [
+    {
+      "id": 1,
+      "title": "Tỏi Xay 3Sach Kitchen (Hộp 100Gr)",
+      "body": {
+        "head": "Tỏi là một loại gia vị quen thuộc trong căn bếp của bạn. Tuy nhiên, tỏi không chỉ giúp cho những món ăn trở nên thơm ngon, hấp dẫn hơn mà còn có tác dụng trong việc phòng và điều trị một số bệnh. Bài viết dưới đây sẽ giúp bạn hiểu rõ hơn về công dụng của tỏi đối với sức khỏe.",
+        "content": "Theo các chuyên gia về dinh dưỡng, tỏi có chứa protein, carbohydrates, calo và một số dưỡng chất quan trọng khác như vitamin B, sắt, magie, canxi, kali, mangan, photpho Bên cạnh đó, hợp chất hữu cơ sulfur và glycosides được cho là thành phần công hiệu chính của tỏi. Loại thực phẩm này cũng có hàm lượng cao germanium và selen khá cao, trong đó lượng germanium trong tỏi được ước tính cao hơn so với nhân sâm hay trà xanh Đặc biệt, Allicin được cho là hoạt chất mạnh nhất và quan trọng nhất của tỏi. Nhưng bạn cần biết rằng, trong củ tỏi sống allicin chưa tồn tại. Tiền thân của Allicin là Alliin. Phải đến khi bạn nghiền nát hoặc đập dập củ tỏi, kích thích enzym alinase hoạt động thì Allicin có trong tỏi sống mới biến thành Allicin và có hoạt tính kháng sinh rất tốt."
+      },
+      "image": "https://product.hstatic.net/200000460455/product/toi_xay_4bd4284a234a4b119cf0ef3959247f79_master.png",
+      "price": 10000,
+      "discount": "-20%"
+    },
+    {
+      "id": 2,
+      "title": "Thịt Đùi Heo Meat Master 400g (Khay)",
+      "body": {
+        "head": "Ba Rọi Heo hay còn gọi là thịt ba chỉ, nằm ở phần thịt bụng của heo, có lớp thịt và lớp mỡ xen kẽ đẹp mắt. Với hương vị thịt béo hài hòa đặc trưng, thịt ba rọi đặc biệt được ưa chuộng để chế biến nhiều món ăn khác nhau như luộc, chiên, nướng đều phù hợp.",
+        "content": "Phương pháp sản xuất: Heo được nuôi theo quy trình khép kín từ heo ông bà đến heo bố mẹ, heo con và heo thịt thương phẩm. Thức ăn là ngũ cốc được lên men vi sinh E.M công nghệ Nhật Bản. Trang trại hoàn toàn kiểm soát được nguồn thức ăn, chất lượng con giống, quy trình nuôi và chất lượng thịt. Heo được giết mổ trong môi trường lạnh và vận chuyển thịt tươi về cửa hàng mỗi ngày. Heo tươi được cửa hàng bảo quản đúng nhiệt độ (20 độ C – 40 độ C) để không bị nhiễm vi sinh."
+      },
+      "image": "https://product.hstatic.net/200000460455/product/ba_roi_heo_4de6644e10244b75a09a540e39029ac2_799f6bf93f9c436da841a50486170291_master.jpg",
+      "price": 127500,
+      "discount": ""
+    },
+    {
+      "id": 3,
+      "title": "Tảo Jaban BBQ 40G*50",
+      "body": {
+        "head": "Tỏi là một loại gia vị quen thuộc trong căn bếp của bạn. Tuy nhiên, tỏi không chỉ giúp cho những món ăn trở nên thơm ngon, hấp dẫn hơn mà còn có tác dụng trong việc phòng và điều trị một số bệnh. Bài viết dưới đây sẽ giúp bạn hiểu rõ hơn về công dụng của tỏi đối với sức khỏe.",
+        "content": "Theo các chuyên gia về dinh dưỡng, tỏi có chứa protein, carbohydrates, calo và một số dưỡng chất quan trọng khác như vitamin B, sắt, magie, canxi, kali, mangan, photpho Bên cạnh đó, hợp chất hữu cơ sulfur và glycosides được cho là thành phần công hiệu chính của tỏi. Loại thực phẩm này cũng có hàm lượng cao germanium và selen khá cao, trong đó lượng germanium trong tỏi được ước tính cao hơn so với nhân sâm hay trà xanh Đặc biệt, Allicin được cho là hoạt chất mạnh nhất và quan trọng nhất của tỏi. Nhưng bạn cần biết rằng, trong củ tỏi sống allicin chưa tồn tại. Tiền thân của Allicin là Alliin. Phải đến khi bạn nghiền nát hoặc đập dập củ tỏi, kích thích enzym alinase hoạt động thì Allicin có trong tỏi sống mới biến thành Allicin và có hoạt tính kháng sinh rất tốt."
+      },
+      "image": "https://product.hstatic.net/200000460455/product/tao_jaban_bbq_40g_50_c95b25e4505c47bca2c3127d15e4e250_large.png",
+      "price": 49000,
+      "discount": "-11%"
+    },
+    {
+      "id": 4,
+      "title": "Tỏi Xay 3Sach Kitchen (Hộp 100Gr)",
+      "body": {
+        "head": "Tỏi là một loại gia vị quen thuộc trong căn bếp của bạn. Tuy nhiên, tỏi không chỉ giúp cho những món ăn trở nên thơm ngon, hấp dẫn hơn mà còn có tác dụng trong việc phòng và điều trị một số bệnh. Bài viết dưới đây sẽ giúp bạn hiểu rõ hơn về công dụng của tỏi đối với sức khỏe.",
+        "content": "Theo các chuyên gia về dinh dưỡng, tỏi có chứa protein, carbohydrates, calo và một số dưỡng chất quan trọng khác như vitamin B, sắt, magie, canxi, kali, mangan, photpho Bên cạnh đó, hợp chất hữu cơ sulfur và glycosides được cho là thành phần công hiệu chính của tỏi. Loại thực phẩm này cũng có hàm lượng cao germanium và selen khá cao, trong đó lượng germanium trong tỏi được ước tính cao hơn so với nhân sâm hay trà xanh Đặc biệt, Allicin được cho là hoạt chất mạnh nhất và quan trọng nhất của tỏi. Nhưng bạn cần biết rằng, trong củ tỏi sống allicin chưa tồn tại. Tiền thân của Allicin là Alliin. Phải đến khi bạn nghiền nát hoặc đập dập củ tỏi, kích thích enzym alinase hoạt động thì Allicin có trong tỏi sống mới biến thành Allicin và có hoạt tính kháng sinh rất tốt."
+      },
+      "image": "https://product.hstatic.net/200000460455/product/toi_xay_4bd4284a234a4b119cf0ef3959247f79_master.png",
+      "price": 10000,
+      "discount": "-20%"
+    },
+    {
+      "id": 5,
+      "title": "Thịt Đùi Heo Meat Master 400g (Khay)",
+      "body": {
+        "head": "Ba Rọi Heo hay còn gọi là thịt ba chỉ, nằm ở phần thịt bụng của heo, có lớp thịt và lớp mỡ xen kẽ đẹp mắt. Với hương vị thịt béo hài hòa đặc trưng, thịt ba rọi đặc biệt được ưa chuộng để chế biến nhiều món ăn khác nhau như luộc, chiên, nướng đều phù hợp.",
+        "content": "Phương pháp sản xuất: Heo được nuôi theo quy trình khép kín từ heo ông bà đến heo bố mẹ, heo con và heo thịt thương phẩm. Thức ăn là ngũ cốc được lên men vi sinh E.M công nghệ Nhật Bản. Trang trại hoàn toàn kiểm soát được nguồn thức ăn, chất lượng con giống, quy trình nuôi và chất lượng thịt. Heo được giết mổ trong môi trường lạnh và vận chuyển thịt tươi về cửa hàng mỗi ngày. Heo tươi được cửa hàng bảo quản đúng nhiệt độ (20 độ C – 40 độ C) để không bị nhiễm vi sinh."
+      },
+      "image": "https://product.hstatic.net/200000460455/product/ba_roi_heo_4de6644e10244b75a09a540e39029ac2_799f6bf93f9c436da841a50486170291_master.jpg",
+      "price": 127500,
+      "discount": ""
+    },
+    {
+      "id": 6,
+      "title": "Tảo Jaban BBQ 40G*50",
+      "body": "",
+      "image": "https://product.hstatic.net/200000460455/product/tao_jaban_bbq_40g_50_c95b25e4505c47bca2c3127d15e4e250_large.png",
+      "price": 49000,
+      "discount": "-11%"
+    }
+  ],
+
+  "policy": [
+    {
+    "head": "Cam kết thực phẩm “3Sạch”: Sạch từ nông trại – Sạch qua quá trình sơ chế, chế biến - Sạch đến bàn ăn.",
+    "body": "Miễn phí vận chuyển đối với đơn hàng trên 500,000VND khi đặt hàng trên website. Phí giao hàng tiêu chuẩn: 20,000VND đơn hàng dưới < 500,000VND",
+    "bottom": "Hotline hỗ trợ: 028 7300 3111 - Email: hq@3sachfood.vn"
+    }
+  ],
+  
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ]
+}
