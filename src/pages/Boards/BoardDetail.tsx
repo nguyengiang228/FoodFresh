@@ -1,7 +1,10 @@
-import { Container } from "@mui/material";
-import AppBar from "../../component/AppBar";
+import { Container, Divider } from "@mui/material";
+import AppBar from "~/component/AppBar";
 import BoardBar from "./BoardBar";
 import BoardContent from "./BoardContent";
+import BoardCategories from "./BoardCategories";
+
+// import Categories from "~/component/AppBar/Menu/categories";
 
 function Board() {
   return (
@@ -13,9 +16,12 @@ function Board() {
       }}
     >
       <AppBar />
+      <Divider />
       <BoardBar />
+      <BoardCategories />
       <BoardContent />
 
+      {/* <Categories /> */}
       {/* <Routes>
       <Route path="/" element={<Home />} />
     </Routes> */}

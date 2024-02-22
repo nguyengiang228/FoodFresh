@@ -1,36 +1,59 @@
-import { Box } from "@mui/material";
-import { orange } from "@mui/material/colors";
+import { ReactComponent as LogoIcon } from "~/assets/logo.svg";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import { TextField } from "@mui/material";
+import SvgIcon from "@mui/material/SvgIcon";
+import SearchIcon from "@mui/icons-material/Search";
+import Account from "~/pages/HomePage/Component/Acccount";
+import ShopingCard from "~/pages/HomePage/Component/ShopingCard";
 
 const AppBar = () => {
-  const bgcolor = orange[800];
-
   return (
     <>
       <Box
+        px={45}
         sx={{
-          backgroundColor: `${bgcolor}`,
-          height: "32px",
-          width: "100%",
+          height: "70px",
+          width: "90%",
           display: "flex",
           alignItems: "center",
-          justifyContent: "center",
-          color: "white",
+          justifyContent: "space-between",
         }}
       >
-        <div>
-          FREESHIP nội thành cho đơn hàng từ 500K (xem chi tiết ở chính sách
-          giao hàng)
-        </div>
-      </Box>
-      <Box
-        sx={{
-          height: "75px",
-          width: "100%",
-          display: "flex",
-          alignItems: "center",
-        }}
-      >
-        AppBar
+        <Box sx={{ display: "flex", alignItems: "center", width: 200, mr: 2 }}>
+          <SvgIcon
+            component={LogoIcon}
+            inheritViewBox
+            sx={{ width: "10vw", height: "25vh" }}
+          />
+        </Box>
+        <Box sx={{ display: "flex", alignItems: "center", pl: "20px" }}>
+          <TextField
+            label="Tìm kiếm sản phẩm..."
+            variant="outlined"
+            type="search"
+            size="small"
+            sx={{
+              width: "47rem",
+            }}
+          />
+          <Button
+            variant="text"
+            sx={{
+              height: "57px",
+              borderTopLeftRadius: 0,
+              borderBottomLeftRadius: 0,
+            }}
+          >
+            <SearchIcon fontSize="large" />{" "}
+          </Button>
+        </Box>
+        <Box sx={{ borderLeft: `1px solid #e5e5e5` }}>
+          <Account />
+        </Box>
+        <Box sx={{ borderLeft: `1px solid #e5e5e5` }}>
+          <ShopingCard />
+        </Box>
       </Box>
     </>
   );
