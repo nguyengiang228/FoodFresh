@@ -7,17 +7,11 @@ import { useState } from "react";
 import CloseIcon from "@mui/icons-material/Close";
 import { MenuList, Paper, Typography } from "@mui/material";
 import { useGetCategoryQuery } from "~/redux/api/api.caller";
-// import { ICategories } from "~/interfaces/categories";
-
-// const initialState: ICategories = {
-//   image: "",
-//   title: "",
-// };
+import { NavLink } from "react-router-dom";
 
 const Workspaces = () => {
   const { data } = useGetCategoryQuery();
   // console.log(data);
-  // const [category, setCategory] = useState<ICategories>(initialState);
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
 
@@ -28,9 +22,7 @@ const Workspaces = () => {
   const handleClose = () => {
     setAnchorEl(null);
   };
-  // if (data) {
-  //   console.log(data);
-  // }
+
   return (
     <>
       <Box>
@@ -67,7 +59,12 @@ const Workspaces = () => {
                     alt="/"
                     style={{ width: 20, height: 20, marginRight: 5 }}
                   />
-                  <a> {item.title}</a>
+                  <NavLink
+                    style={{ textDecoration: "none", color: "black" }}
+                    to="/"
+                  >
+                    {item.title}
+                  </NavLink>
                 </MenuItem>
               ))}
             </MenuList>

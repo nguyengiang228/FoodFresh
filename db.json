@@ -170,7 +170,7 @@
       },
       "image": "https://product.hstatic.net/200000460455/product/toi_xay_4bd4284a234a4b119cf0ef3959247f79_master.png",
       "quantity": 100,
-      "price": "10,000",
+      "price": 10.000,
       "totalPrice": 10000,
       "discount": "-20%"
     },
@@ -182,7 +182,7 @@
         "content": "Phương pháp sản xuất: Heo được nuôi theo quy trình khép kín từ heo ông bà đến heo bố mẹ, heo con và heo thịt thương phẩm. Thức ăn là ngũ cốc được lên men vi sinh E.M công nghệ Nhật Bản. Trang trại hoàn toàn kiểm soát được nguồn thức ăn, chất lượng con giống, quy trình nuôi và chất lượng thịt. Heo được giết mổ trong môi trường lạnh và vận chuyển thịt tươi về cửa hàng mỗi ngày. Heo tươi được cửa hàng bảo quản đúng nhiệt độ (20 độ C – 40 độ C) để không bị nhiễm vi sinh."
       },
       "image": "https://product.hstatic.net/200000460455/product/ba_roi_heo_4de6644e10244b75a09a540e39029ac2_799f6bf93f9c436da841a50486170291_master.jpg",
-      "price": "127,500",
+      "price": 127.500,
       "quantity": 100,
       "totalPrice": 127500,
       "discount": ""
@@ -195,7 +195,7 @@
         "content": "Theo các chuyên gia về dinh dưỡng, tỏi có chứa protein, carbohydrates, calo và một số dưỡng chất quan trọng khác như vitamin B, sắt, magie, canxi, kali, mangan, photpho Bên cạnh đó, hợp chất hữu cơ sulfur và glycosides được cho là thành phần công hiệu chính của tỏi. Loại thực phẩm này cũng có hàm lượng cao germanium và selen khá cao, trong đó lượng germanium trong tỏi được ước tính cao hơn so với nhân sâm hay trà xanh Đặc biệt, Allicin được cho là hoạt chất mạnh nhất và quan trọng nhất của tỏi. Nhưng bạn cần biết rằng, trong củ tỏi sống allicin chưa tồn tại. Tiền thân của Allicin là Alliin. Phải đến khi bạn nghiền nát hoặc đập dập củ tỏi, kích thích enzym alinase hoạt động thì Allicin có trong tỏi sống mới biến thành Allicin và có hoạt tính kháng sinh rất tốt."
       },
       "image": "https://product.hstatic.net/200000460455/product/tao_jaban_bbq_40g_50_c95b25e4505c47bca2c3127d15e4e250_large.png",
-      "price": "49,000",
+      "price": 49.000,
       "quantity": 200,
       "totalPrice": 49000,
       "discount": "-11%"
@@ -208,7 +208,7 @@
         "content": "Theo các chuyên gia về dinh dưỡng, tỏi có chứa protein, carbohydrates, calo và một số dưỡng chất quan trọng khác như vitamin B, sắt, magie, canxi, kali, mangan, photpho Bên cạnh đó, hợp chất hữu cơ sulfur và glycosides được cho là thành phần công hiệu chính của tỏi. Loại thực phẩm này cũng có hàm lượng cao germanium và selen khá cao, trong đó lượng germanium trong tỏi được ước tính cao hơn so với nhân sâm hay trà xanh Đặc biệt, Allicin được cho là hoạt chất mạnh nhất và quan trọng nhất của tỏi. Nhưng bạn cần biết rằng, trong củ tỏi sống allicin chưa tồn tại. Tiền thân của Allicin là Alliin. Phải đến khi bạn nghiền nát hoặc đập dập củ tỏi, kích thích enzym alinase hoạt động thì Allicin có trong tỏi sống mới biến thành Allicin và có hoạt tính kháng sinh rất tốt."
       },
       "image": "https://product.hstatic.net/200000460455/product/toi_xay_4bd4284a234a4b119cf0ef3959247f79_master.png",
-      "price": "10,000",
+      "price": 10.000,
       "quantity": 300,
       "totalPrice": 10000,
       "discount": "-20%"
@@ -221,7 +221,7 @@
         "content": "Phương pháp sản xuất: Heo được nuôi theo quy trình khép kín từ heo ông bà đến heo bố mẹ, heo con và heo thịt thương phẩm. Thức ăn là ngũ cốc được lên men vi sinh E.M công nghệ Nhật Bản. Trang trại hoàn toàn kiểm soát được nguồn thức ăn, chất lượng con giống, quy trình nuôi và chất lượng thịt. Heo được giết mổ trong môi trường lạnh và vận chuyển thịt tươi về cửa hàng mỗi ngày. Heo tươi được cửa hàng bảo quản đúng nhiệt độ (20 độ C – 40 độ C) để không bị nhiễm vi sinh."
       },
       "image": "https://product.hstatic.net/200000460455/product/ba_roi_heo_4de6644e10244b75a09a540e39029ac2_799f6bf93f9c436da841a50486170291_master.jpg",
-      "price": "127,500",
+      "price": 127.500,
       "quantity": 400,
       "totalPrice": 127500,
       "discount": ""
@@ -234,7 +234,85 @@
         "content": "Phương pháp sản xuất: Heo được nuôi theo quy trình khép kín từ heo ông bà đến heo bố mẹ, heo con và heo thịt thương phẩm. Thức ăn là ngũ cốc được lên men vi sinh E.M công nghệ Nhật Bản. Trang trại hoàn toàn kiểm soát được nguồn thức ăn, chất lượng con giống, quy trình nuôi và chất lượng thịt. Heo được giết mổ trong môi trường lạnh và vận chuyển thịt tươi về cửa hàng mỗi ngày. Heo tươi được cửa hàng bảo quản đúng nhiệt độ (20 độ C – 40 độ C) để không bị nhiễm vi sinh."
       },
       "image": "https://product.hstatic.net/200000460455/product/tao_jaban_bbq_40g_50_c95b25e4505c47bca2c3127d15e4e250_large.png",
-      "price": "49,000",
+      "price": 49.000,
+      "quantity": 200,
+      "totalPrice": 49000,
+      "discount": "-11%"
+    },
+    {
+      "id": 7,
+      "title": "Sản phẩm 7 ",
+      "body": {
+        "head": "Tỏi là một loại gia vị quen thuộc trong căn bếp của bạn. Tuy nhiên, tỏi không chỉ giúp cho những món ăn trở nên thơm ngon, hấp dẫn hơn mà còn có tác dụng trong việc phòng và điều trị một số bệnh. Bài viết dưới đây sẽ giúp bạn hiểu rõ hơn về công dụng của tỏi đối với sức khỏe.",
+        "content": "Theo các chuyên gia về dinh dưỡng, tỏi có chứa protein, carbohydrates, calo và một số dưỡng chất quan trọng khác như vitamin B, sắt, magie, canxi, kali, mangan, photpho Bên cạnh đó, hợp chất hữu cơ sulfur và glycosides được cho là thành phần công hiệu chính của tỏi. Loại thực phẩm này cũng có hàm lượng cao germanium và selen khá cao, trong đó lượng germanium trong tỏi được ước tính cao hơn so với nhân sâm hay trà xanh Đặc biệt, Allicin được cho là hoạt chất mạnh nhất và quan trọng nhất của tỏi. Nhưng bạn cần biết rằng, trong củ tỏi sống allicin chưa tồn tại. Tiền thân của Allicin là Alliin. Phải đến khi bạn nghiền nát hoặc đập dập củ tỏi, kích thích enzym alinase hoạt động thì Allicin có trong tỏi sống mới biến thành Allicin và có hoạt tính kháng sinh rất tốt."
+      },
+      "image": "https://product.hstatic.net/200000460455/product/toi_xay_4bd4284a234a4b119cf0ef3959247f79_master.png",
+      "quantity": 100,
+      "price": 10.000,
+      "totalPrice": 10000,
+      "discount": "-20%"
+    },
+    {
+      "id": 8,
+      "title": "Sản phẩm 8",
+      "body": {
+        "head": "Ba Rọi Heo hay còn gọi là thịt ba chỉ, nằm ở phần thịt bụng của heo, có lớp thịt và lớp mỡ xen kẽ đẹp mắt. Với hương vị thịt béo hài hòa đặc trưng, thịt ba rọi đặc biệt được ưa chuộng để chế biến nhiều món ăn khác nhau như luộc, chiên, nướng đều phù hợp.",
+        "content": "Phương pháp sản xuất: Heo được nuôi theo quy trình khép kín từ heo ông bà đến heo bố mẹ, heo con và heo thịt thương phẩm. Thức ăn là ngũ cốc được lên men vi sinh E.M công nghệ Nhật Bản. Trang trại hoàn toàn kiểm soát được nguồn thức ăn, chất lượng con giống, quy trình nuôi và chất lượng thịt. Heo được giết mổ trong môi trường lạnh và vận chuyển thịt tươi về cửa hàng mỗi ngày. Heo tươi được cửa hàng bảo quản đúng nhiệt độ (20 độ C – 40 độ C) để không bị nhiễm vi sinh."
+      },
+      "image": "https://product.hstatic.net/200000460455/product/ba_roi_heo_4de6644e10244b75a09a540e39029ac2_799f6bf93f9c436da841a50486170291_master.jpg",
+      "price": 127.500,
+      "quantity": 100,
+      "totalPrice": 127500,
+      "discount": ""
+    },
+    {
+      "id": 9,
+      "title": "Sản phẩm 9",
+      "body": {
+        "head": "Tỏi là một loại gia vị quen thuộc trong căn bếp của bạn. Tuy nhiên, tỏi không chỉ giúp cho những món ăn trở nên thơm ngon, hấp dẫn hơn mà còn có tác dụng trong việc phòng và điều trị một số bệnh. Bài viết dưới đây sẽ giúp bạn hiểu rõ hơn về công dụng của tỏi đối với sức khỏe.",
+        "content": "Theo các chuyên gia về dinh dưỡng, tỏi có chứa protein, carbohydrates, calo và một số dưỡng chất quan trọng khác như vitamin B, sắt, magie, canxi, kali, mangan, photpho Bên cạnh đó, hợp chất hữu cơ sulfur và glycosides được cho là thành phần công hiệu chính của tỏi. Loại thực phẩm này cũng có hàm lượng cao germanium và selen khá cao, trong đó lượng germanium trong tỏi được ước tính cao hơn so với nhân sâm hay trà xanh Đặc biệt, Allicin được cho là hoạt chất mạnh nhất và quan trọng nhất của tỏi. Nhưng bạn cần biết rằng, trong củ tỏi sống allicin chưa tồn tại. Tiền thân của Allicin là Alliin. Phải đến khi bạn nghiền nát hoặc đập dập củ tỏi, kích thích enzym alinase hoạt động thì Allicin có trong tỏi sống mới biến thành Allicin và có hoạt tính kháng sinh rất tốt."
+      },
+      "image": "https://product.hstatic.net/200000460455/product/tao_jaban_bbq_40g_50_c95b25e4505c47bca2c3127d15e4e250_large.png",
+      "price": 49.000,
+      "quantity": 200,
+      "totalPrice": 49000,
+      "discount": "-11%"
+    },
+    {
+      "id": 10,
+      "title": "Sản phẩm 10",
+      "body": {
+        "head": "Tỏi là một loại gia vị quen thuộc trong căn bếp của bạn. Tuy nhiên, tỏi không chỉ giúp cho những món ăn trở nên thơm ngon, hấp dẫn hơn mà còn có tác dụng trong việc phòng và điều trị một số bệnh. Bài viết dưới đây sẽ giúp bạn hiểu rõ hơn về công dụng của tỏi đối với sức khỏe.",
+        "content": "Theo các chuyên gia về dinh dưỡng, tỏi có chứa protein, carbohydrates, calo và một số dưỡng chất quan trọng khác như vitamin B, sắt, magie, canxi, kali, mangan, photpho Bên cạnh đó, hợp chất hữu cơ sulfur và glycosides được cho là thành phần công hiệu chính của tỏi. Loại thực phẩm này cũng có hàm lượng cao germanium và selen khá cao, trong đó lượng germanium trong tỏi được ước tính cao hơn so với nhân sâm hay trà xanh Đặc biệt, Allicin được cho là hoạt chất mạnh nhất và quan trọng nhất của tỏi. Nhưng bạn cần biết rằng, trong củ tỏi sống allicin chưa tồn tại. Tiền thân của Allicin là Alliin. Phải đến khi bạn nghiền nát hoặc đập dập củ tỏi, kích thích enzym alinase hoạt động thì Allicin có trong tỏi sống mới biến thành Allicin và có hoạt tính kháng sinh rất tốt."
+      },
+      "image": "https://product.hstatic.net/200000460455/product/toi_xay_4bd4284a234a4b119cf0ef3959247f79_master.png",
+      "price": 10.000,
+      "quantity": 300,
+      "totalPrice": 10000,
+      "discount": "-20%"
+    },
+    {
+      "id": 11,
+      "title": "Sản phẩm 11",
+      "body": {
+        "head": "Ba Rọi Heo hay còn gọi là thịt ba chỉ, nằm ở phần thịt bụng của heo, có lớp thịt và lớp mỡ xen kẽ đẹp mắt. Với hương vị thịt béo hài hòa đặc trưng, thịt ba rọi đặc biệt được ưa chuộng để chế biến nhiều món ăn khác nhau như luộc, chiên, nướng đều phù hợp.",
+        "content": "Phương pháp sản xuất: Heo được nuôi theo quy trình khép kín từ heo ông bà đến heo bố mẹ, heo con và heo thịt thương phẩm. Thức ăn là ngũ cốc được lên men vi sinh E.M công nghệ Nhật Bản. Trang trại hoàn toàn kiểm soát được nguồn thức ăn, chất lượng con giống, quy trình nuôi và chất lượng thịt. Heo được giết mổ trong môi trường lạnh và vận chuyển thịt tươi về cửa hàng mỗi ngày. Heo tươi được cửa hàng bảo quản đúng nhiệt độ (20 độ C – 40 độ C) để không bị nhiễm vi sinh."
+      },
+      "image": "https://product.hstatic.net/200000460455/product/ba_roi_heo_4de6644e10244b75a09a540e39029ac2_799f6bf93f9c436da841a50486170291_master.jpg",
+      "price": 127.500,
+      "quantity": 400,
+      "totalPrice": 127500,
+      "discount": ""
+    },
+    {
+      "id": 12,
+      "title": "Sản phẩm 12",
+      "body": {
+        "head": "Ba Rọi Heo hay còn gọi là thịt ba chỉ, nằm ở phần thịt bụng của heo, có lớp thịt và lớp mỡ xen kẽ đẹp mắt. Với hương vị thịt béo hài hòa đặc trưng, thịt ba rọi đặc biệt được ưa chuộng để chế biến nhiều món ăn khác nhau như luộc, chiên, nướng đều phù hợp.",
+        "content": "Phương pháp sản xuất: Heo được nuôi theo quy trình khép kín từ heo ông bà đến heo bố mẹ, heo con và heo thịt thương phẩm. Thức ăn là ngũ cốc được lên men vi sinh E.M công nghệ Nhật Bản. Trang trại hoàn toàn kiểm soát được nguồn thức ăn, chất lượng con giống, quy trình nuôi và chất lượng thịt. Heo được giết mổ trong môi trường lạnh và vận chuyển thịt tươi về cửa hàng mỗi ngày. Heo tươi được cửa hàng bảo quản đúng nhiệt độ (20 độ C – 40 độ C) để không bị nhiễm vi sinh."
+      },
+      "image": "https://product.hstatic.net/200000460455/product/tao_jaban_bbq_40g_50_c95b25e4505c47bca2c3127d15e4e250_large.png",
+      "price": 49.000,
       "quantity": 200,
       "totalPrice": 49000,
       "discount": "-11%"
@@ -262,7 +340,36 @@
       "title": "Rau Củ Các Loại"
     }
   ],
-  
+  "recipe": [
+    {
+      "id": 1,
+      "title": "4 cách chế biến hoành thánh ngon lành cho cả nhà",
+      "dateTime": "10/02/2024",
+      "image": "https://scontent.xx.fbcdn.net/v/t1.15752-9/414162956_753998089479052_2357561459572480958_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=510075&_nc_eui2=AeHALxpYLRyoUwaZxn8Lgd5J8-RkdVbU5Pfz5GR1VtTk90K5P6y8bTVLd536IpHKxja8T6bCr5V3UTkmRwO9Q6Yp&_nc_ohc=TmSEK2Sf92oAX9vMkXn&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdT0FOrpi8IYTrN9_sQtZea_FMgreTB-7hfgslTCuJ1hDQ&oe=6604BDD1"
+
+    },
+    {
+      "id": 2,
+      "title": "Giò sống là gì? Giò sống làm món gì ngon?",
+      "dateTime": "30/08/2023",
+      "image": "https://scontent.xx.fbcdn.net/v/t1.15752-9/380284572_342447081553601_6091769309722887824_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=510075&_nc_eui2=AeGAoBYdZaPj-ImLT855h_VVqTEXP_1qH1mpMRc__WofWc8Th1KQkvcI9A7y8T9IJj6IunC7qGztNByRdGSQJf0M&_nc_ohc=Bwuifqv82UUAX-m-A4D&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTXbQp5PdJdSacrRlaVAKQY49RT2lcrKvIgyiPLfeUggw&oe=6604CD7D"
+
+    },
+    {
+      "id": 3,
+      "title": "Đổi vị món quen cùng thịt heo cốt lết",
+      "dateTime": "15/09/2023",
+      "image": "https://scontent.xx.fbcdn.net/v/t1.15752-9/277985603_540042984214814_5788225252086200401_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=510075&_nc_eui2=AeHCXEXRiA1MkgpDalVgczS77z4E3-Jw7GnvPgTf4nDsaecOFz91xb_ybuFiPz_K_MLBmYIlisS-pyLuTY4w0QSI&_nc_ohc=t-hO4l0-wSgAX9jgRQ2&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdR_0YZBWcv8v1cnjuQTjHAnO5a8umFSiHhFSHx56FDpzQ&oe=6604A4C2"
+
+    },
+    {
+      "id": 4,
+      "title": "Kombucha là gì? Tác dụng của Kombucha với sức khỏe",
+      "dateTime": "02/08/2023",
+      "image": "https://scontent.xx.fbcdn.net/v/t1.15752-9/429094540_344932218538868_1405638483363168101_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=510075&_nc_eui2=AeF85Dx3cklMZXvBV_tAHug-G6bVSfJRiHkbptVJ8lGIecsub92KXS2CK0sL06GHgMBnX9xm6UODH75gdQTjSadV&_nc_ohc=b11Hvwd31qEAX9kZeMe&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQ5kVYFaW2hedKHxhk-23ebISsEeD3elm91kUHoQWCPDg&oe=6604D430"
+
+    }
+  ],
   "policy": [
     {
     "head": "Cam kết thực phẩm “3Sạch”: Sạch từ nông trại – Sạch qua quá trình sơ chế, chế biến - Sạch đến bàn ăn.",

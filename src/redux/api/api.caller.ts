@@ -3,6 +3,7 @@ import customBaseQuery from "./fetchBase";
 import { ICategories } from "~/interfaces/categories";
 import { IUser } from "~/interfaces/user";
 import { IProducts } from "~/interfaces/products";
+import { IPostRecipe } from "~/interfaces/postRecipe";
 
 export const apiCaller = createApi({
   reducerPath: "apiCaller",
@@ -86,6 +87,21 @@ export const apiCaller = createApi({
       },
       providesTags: [{ type: "Posts" }],
     }),
+    getProductWithSearch: builder.query<IProducts[], string>({
+      query: (item) => `/products?q=${item}`,
+      providesTags: [{ type: "Posts" }],
+    }),
+
+    //Hook CallApi - postRecipe
+    getPostRecipe: builder.query<IPostRecipe[], void>({
+      query() {
+        return {
+          url: `/recipe`,
+          method: "GET",
+        };
+      },
+      providesTags: [{ type: "Posts" }],
+    }),
   }),
 });
 
@@ -97,4 +113,6 @@ export const {
   useDeleteExampleMutation,
   useGetCategoryQuery,
   useGetProductItemQuery,
+  useGetProductWithSearchQuery,
+  useGetPostRecipeQuery,
 } = apiCaller;

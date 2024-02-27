@@ -12,8 +12,7 @@ import Divider from "@mui/material/Divider";
 import Typography from "@mui/material/Typography";
 
 const ShopingCard = () => {
-  const [state, setState] = useState<number>(1);
-  // const [sumItems, setSumItems] = useState<number>(0)
+  // const [state, setState] = useState<number>(1);
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
 
@@ -22,15 +21,6 @@ const ShopingCard = () => {
   };
   const handleClose = (): void => {
     setAnchorEl(null);
-  };
-
-  const handleAddCard = () => {
-    setState(state + 1);
-  };
-  const handleRemoveCard = () => {
-    if (state !== 1) {
-      setState(state - 1);
-    }
   };
 
   return (
@@ -107,11 +97,7 @@ const ShopingCard = () => {
           </Typography>
         </Box>
         <Divider />
-        <CartList
-          state={state}
-          handleAddCard={handleAddCard}
-          handleRemoveCard={handleRemoveCard}
-        />
+        <CartList />
       </Menu>
     </>
   );

@@ -1,58 +1,67 @@
 import { ReactComponent as LogoIcon } from "~/assets/logo.svg";
 import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
-import { TextField } from "@mui/material";
 import SvgIcon from "@mui/material/SvgIcon";
-import SearchIcon from "@mui/icons-material/Search";
 import Account from "~/pages/HomePage/Component/Acccount";
 import ShopingCard from "~/pages/HomePage/Component/ShopingCard";
+import ListSearch from "~/pages/HomePage/Component/ListSearch";
+import { useSelector } from "react-redux";
+import { cartSelector } from "~/redux/features/dashboard.slice";
+import Typography from "@mui/material/Typography";
 
 const AppBar = () => {
+  const notice = useSelector(cartSelector);
+  const noticeCart = notice.reduce((acc, curr) => acc + curr.quantity, 0);
+  // console.log(noticeCart);
   return (
     <>
       <Box
         px={45}
         sx={{
           height: "70px",
-          width: "90%",
+          width: "100%",
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
+          // position: "fixed",
+          bgcolor: "white",
+          borderBottom: "1px solid #bdbdbd",
         }}
       >
         <Box sx={{ display: "flex", alignItems: "center", width: 200, mr: 2 }}>
           <SvgIcon
             component={LogoIcon}
             inheritViewBox
-            sx={{ width: "10vw", height: "25vh" }}
+            sx={{ width: "13vw", height: "25vh" }}
           />
         </Box>
-        <Box sx={{ display: "flex", alignItems: "center", pl: "20px" }}>
-          <TextField
-            label="Tìm kiếm sản phẩm..."
-            variant="outlined"
-            type="search"
-            size="small"
-            sx={{
-              width: "47rem",
-            }}
-          />
-          <Button
-            variant="text"
-            sx={{
-              height: "57px",
-              borderTopLeftRadius: 0,
-              borderBottomLeftRadius: 0,
-            }}
-          >
-            <SearchIcon fontSize="large" />{" "}
-          </Button>
+        <Box
+          sx={{ display: "flex", alignItems: "center", pl: "20px", pt: "5px" }}
+        >
+          <ListSearch />
         </Box>
         <Box sx={{ borderLeft: `1px solid #e5e5e5` }}>
           <Account />
         </Box>
-        <Box sx={{ borderLeft: `1px solid #e5e5e5` }}>
+        <Box sx={{ display: "flex", borderLeft: `1px solid #e5e5e5` }}>
           <ShopingCard />
+          <Box>
+            {noticeCart > 0 ? (
+              <Typography
+                sx={{
+                  width: "22px",
+                  transform: "translateX(-90%) translateY(-20%)",
+                  height: "22px",
+                  bgcolor: "orange",
+                  textAlign: "center",
+                  borderRadius: "10px",
+                }}
+              >
+                {noticeCart}
+              </Typography>
+            ) : (
+              <></>
+            )}
+          </Box>
         </Box>
       </Box>
     </>
