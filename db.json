@@ -172,7 +172,8 @@
       "quantity": 100,
       "price": 10.000,
       "totalPrice": 10000,
-      "discount": "-20%"
+      "discount": 20,
+      "brand": "VietNam"
     },
     {
       "id": 2,
@@ -185,7 +186,8 @@
       "price": 127.500,
       "quantity": 100,
       "totalPrice": 127500,
-      "discount": ""
+      "discount": 30,
+      "brand": "VietNam"
     },
     {
       "id": 3,
@@ -198,7 +200,8 @@
       "price": 49.000,
       "quantity": 200,
       "totalPrice": 49000,
-      "discount": "-11%"
+      "discount": 10,
+      "brand": "VietNam"
     },
     {
       "id": 4,
@@ -211,7 +214,8 @@
       "price": 10.000,
       "quantity": 300,
       "totalPrice": 10000,
-      "discount": "-20%"
+      "discount": 20,
+      "brand": "VietNam"
     },
     {
       "id": 5,
@@ -224,7 +228,8 @@
       "price": 127.500,
       "quantity": 400,
       "totalPrice": 127500,
-      "discount": ""
+      "discount": 30,
+      "brand": "VietNam"
     },
     {
       "id": 6,
@@ -237,7 +242,8 @@
       "price": 49.000,
       "quantity": 200,
       "totalPrice": 49000,
-      "discount": "-11%"
+      "discount": 10,
+      "brand": "VietNam"
     },
     {
       "id": 7,
@@ -250,7 +256,8 @@
       "quantity": 100,
       "price": 10.000,
       "totalPrice": 10000,
-      "discount": "-20%"
+      "discount": "-20%",
+      "brand": "VietNam"
     },
     {
       "id": 8,
@@ -263,7 +270,8 @@
       "price": 127.500,
       "quantity": 100,
       "totalPrice": 127500,
-      "discount": ""
+      "discount": 30,
+      "brand": "USA"
     },
     {
       "id": 9,
@@ -276,7 +284,8 @@
       "price": 49.000,
       "quantity": 200,
       "totalPrice": 49000,
-      "discount": "-11%"
+      "discount": 10,
+      "brand": "USA"
     },
     {
       "id": 10,
@@ -289,7 +298,8 @@
       "price": 10.000,
       "quantity": 300,
       "totalPrice": 10000,
-      "discount": "-20%"
+      "discount": 20,
+      "brand": "USA"
     },
     {
       "id": 11,
@@ -302,7 +312,8 @@
       "price": 127.500,
       "quantity": 400,
       "totalPrice": 127500,
-      "discount": ""
+      "discount": 30,
+      "brand": "USA"
     },
     {
       "id": 12,
@@ -315,7 +326,8 @@
       "price": 49.000,
       "quantity": 200,
       "totalPrice": 49000,
-      "discount": "-11%"
+      "discount": 10,
+      "brand": "Other"
     }
   ],
   "categories": [

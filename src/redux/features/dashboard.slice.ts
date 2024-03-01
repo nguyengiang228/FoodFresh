@@ -3,6 +3,7 @@ import { RootState } from "../store";
 import {
   Cart,
   CartList,
+  IChecked,
   IProductsData,
   IProductsSearch,
 } from "~/interfaces/products";
@@ -15,7 +16,6 @@ export interface CartState {
 
 const initialState: CartState = {
   cartItem: [],
-  // value: 0,
   totalQuantity: 0,
   totalPrice: 0,
 };
@@ -35,17 +35,13 @@ export const cartSlice = createSlice({
     // },
 
     addToCart: (state, action: PayloadAction<IProductsData>) => {
-      const { id, totalPrice, title, image, price } = action.payload;
+      const { id, totalPrice, title, image, price, brand } = action.payload;
       const existingItem = state.cartItem.find((item) => item.id === id);
-
-      // state.totalQuantity++;
-      // state.totalPrice += totalPrice;
 
       if (existingItem) {
         const abc = state.cartItem.map((item) => {
           const { quantity, price } = item;
           const newQuantity = quantity + 1;
-          // console.log(newQuantity, totalPrice);
 
           if (item.id === id) {
             return {
@@ -55,9 +51,10 @@ export const cartSlice = createSlice({
               quantity: newQuantity,
               totalPrice: price * newQuantity,
               price: item.price,
+              brand: item.brand,
             };
           }
-          console.log(item);
+          // console.log(item);
           return item;
         });
         state.cartItem = [...abc];
@@ -69,6 +66,7 @@ export const cartSlice = createSlice({
           quantity: 1,
           totalPrice: totalPrice,
           price: price,
+          brand: brand,
         });
       }
     },
@@ -94,6 +92,7 @@ export const cartSlice = createSlice({
               quantity: newQuantity,
               totalPrice: price * newQuantity,
               price: item.price,
+              brand: item.brand,
             };
           }
           return item;
@@ -116,10 +115,17 @@ export const cartSlice = createSlice({
       const searchItem = state.cartItem.filter((item) => item.title === title);
       state.cartItem = searchItem;
     },
+    filterItem: (state, action: PayloadAction<IChecked>) => {
+      const { brand } = action.payload;
+      const filterItem = state.cartItem.filter((item) => item.brand === brand);
+      state.cartItem = [...filterItem];
+      console.log(filterItem);
+    },
   },
 });
 
-export const { subtractCart, addToCart, deleteCartItem } = cartSlice.actions;
+export const { addToCart, subtractCart, deleteCartItem, filterItem } =
+  cartSlice.actions;
 
 export const cartSelector = (state: RootState) => state.cart.cartItem;
 

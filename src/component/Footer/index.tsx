@@ -3,49 +3,61 @@ import Button from "@mui/material/Button";
 import { ReactComponent as LogoIcon } from "~/assets/logo.svg";
 import SvgIcon from "@mui/material/SvgIcon";
 import { grey } from "@mui/material/colors";
-import { Typography } from "@mui/material";
+import Typography from "@mui/material/Typography";
+import Tooltip from "@mui/material/Tooltip";
 import CallOutlinedIcon from "@mui/icons-material/CallOutlined";
 import MailIcon from "@mui/icons-material/Mail";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import { Link } from "react-router-dom";
 
+const bgColor = grey[200];
+
 const Footer = () => {
   return (
     <Box
-      px={45}
+      px={50}
       sx={{
         display: "flex",
         justifyContent: "space-between",
         width: "100%",
-        maxHeight: "auto",
-        bgcolor: grey[100],
+        height: "40vh",
+        bgcolor: bgColor,
       }}
     >
-      <Box sx={{ display: "block", alignItems: "center", width: 300, mr: 2 }}>
+      <Box
+        sx={{
+          display: "block",
+          alignItems: "center",
+
+          width: 300,
+          mr: 2,
+        }}
+      >
         <SvgIcon
           component={LogoIcon}
           inheritViewBox
           sx={{
-            width: "25vw",
-            height: "30vh",
-            transform: "translateY(-20%) translateX(-10%)",
+            width: "14vw",
+            height: "25vh",
+            transform: "translateY(-20%)",
           }}
         />
-        <Typography
+        <Box
           px={6}
-          sx={{ width: 380, transform: "translateY(-150px)" }}
-          variant="body1"
+          sx={{ width: 380, transform: "translateY(-100px) translateX(-10%)" }}
         >
-          &emsp; SOFRESH đồng hành và hỗ trợ nông sản Việt, mang đến cho khách
-          hàng thực phẩm “3 Sạch” : Sạch từ nông trại - Sạch qua quá trình sơ
-          chế, chế biến - Sạch đến bàn ăn.
+          <Typography>
+            &emsp; SOFRESH đồng hành và hỗ trợ nông sản Việt, mang đến cho khách
+            hàng thực phẩm “3 Sạch” : Sạch từ nông trại - Sạch qua quá trình sơ
+            chế, chế biến - Sạch đến bàn ăn.
+          </Typography>
           <Typography>
             &emsp; 8 siêu thị và một xưởng sản xuất thực phẩm hoạt động trên địa
             bàn TP. Hà Nội phục vụ thực phẩm tươi, sạch, đảm bảo chất lượng và
             an toàn.
           </Typography>
-        </Typography>
+        </Box>
       </Box>
       <Box pt={8} sx={{ textAlign: "center" }}>
         <Typography variant="h5"> Hệ thống cửa hàng</Typography>
@@ -84,7 +96,7 @@ const Footer = () => {
           </li>
         </ul>
       </Box>
-      <Box pt={8} sx={{}}>
+      <Box pt={8}>
         <Typography variant="h5"> Liên hệ chúng tôi </Typography>
         <Box pt={2} sx={{ display: "flex", justifyContent: "space-around" }}>
           <CallOutlinedIcon fontSize="large" />
@@ -94,36 +106,43 @@ const Footer = () => {
         </Box>
 
         <Box pt={3} sx={{ justifyContent: "space-between" }}>
-          <Button
-            variant="outlined"
-            sx={{ width: "auto", pl: 0, pr: 0, borderRadius: "10px" }}
-          >
-            <MailIcon sx={{ p: 0 }} fontSize="large" />
-          </Button>
-          <Button
-            variant="outlined"
-            sx={{
-              width: "auto",
-              pl: 0,
-              pr: 0,
-              ml: "5px",
-              borderRadius: "10px",
-            }}
-          >
-            <FacebookIcon sx={{ p: 0 }} fontSize="large" />
-          </Button>
-          <Button
-            variant="outlined"
-            sx={{
-              width: "auto",
-              pl: 0,
-              pr: 0,
-              ml: "5px",
-              borderRadius: "10px",
-            }}
-          >
-            <YouTubeIcon sx={{ p: 0 }} fontSize="large" />
-          </Button>
+          <Tooltip title="Email">
+            <Button
+              variant="outlined"
+              sx={{ width: "auto", pl: 0, pr: 0, borderRadius: "10px" }}
+            >
+              <MailIcon sx={{ p: 0 }} fontSize="large" />
+            </Button>
+          </Tooltip>
+
+          <Tooltip title="Facebook">
+            <Button
+              variant="outlined"
+              sx={{
+                width: "auto",
+                pl: 0,
+                pr: 0,
+                ml: "5px",
+                borderRadius: "10px",
+              }}
+            >
+              <FacebookIcon sx={{ p: 0 }} fontSize="large" />
+            </Button>
+          </Tooltip>
+          <Tooltip title="Youtube">
+            <Button
+              variant="outlined"
+              sx={{
+                width: "auto",
+                pl: 0,
+                pr: 0,
+                ml: "5px",
+                borderRadius: "10px",
+              }}
+            >
+              <YouTubeIcon sx={{ p: 0 }} fontSize="large" />
+            </Button>
+          </Tooltip>
         </Box>
       </Box>
     </Box>

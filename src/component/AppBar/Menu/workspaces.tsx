@@ -27,7 +27,7 @@ const Workspaces = () => {
     <>
       <Box>
         <Button
-          sx={{ float: "left" }}
+          sx={{ float: "left", cursor: "pointer" }}
           aria-controls={open ? "basic-menu" : undefined}
           aria-haspopup="true"
           aria-expanded={open ? true : undefined}
@@ -39,11 +39,13 @@ const Workspaces = () => {
               <Typography>Menu</Typography>
             </Box>
           ) : (
-            <CloseIcon fontSize="large" />
+            <Box sx={{ cursor: "pointer", zIndex: 1000 }}>
+              <CloseIcon fontSize="large" />
+            </Box>
           )}
         </Button>
 
-        <Paper sx={{ width: 120, maxWidth: "100%" }}>
+        <Paper sx={{ width: 120, maxWidth: "100%", zIndex: 10 }}>
           <Menu
             sx={{ marginTop: 0.8 }}
             anchorEl={anchorEl}
@@ -51,23 +53,25 @@ const Workspaces = () => {
             onClose={handleClose}
             MenuListProps={{ "aria-labelledby": "basic-button" }}
           >
-            <MenuList sx={{ width: 190, maxWidth: "100%" }}>
-              {data?.map((item, index) => (
-                <MenuItem key={index} onClick={handleClose}>
-                  <img
-                    src={item.image}
-                    alt="/"
-                    style={{ width: 20, height: 20, marginRight: 5 }}
-                  />
-                  <NavLink
-                    style={{ textDecoration: "none", color: "black" }}
-                    to="/"
-                  >
-                    {item.title}
-                  </NavLink>
-                </MenuItem>
-              ))}
-            </MenuList>
+            {data && (
+              <MenuList sx={{ width: 190, maxWidth: "100%" }}>
+                {data.map((item, index) => (
+                  <MenuItem key={index} onClick={handleClose}>
+                    <img
+                      src={item.image}
+                      alt="/"
+                      style={{ width: 20, height: 20, marginRight: 5 }}
+                    />
+                    <NavLink
+                      style={{ textDecoration: "none", color: "black" }}
+                      to="/"
+                    >
+                      {item.title}
+                    </NavLink>
+                  </MenuItem>
+                ))}
+              </MenuList>
+            )}
           </Menu>
         </Paper>
       </Box>

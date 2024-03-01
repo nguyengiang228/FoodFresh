@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import Button from "@mui/material/Button";
 import SearchIcon from "@mui/icons-material/Search";
 import TextField from "@mui/material/TextField";
@@ -6,17 +6,28 @@ import { useGetProductWithSearchQuery } from "~/redux/api/api.caller";
 import Box from "@mui/material/Box";
 
 import { Autocomplete } from "@mui/material";
+import { useDebounce } from "~/hooks";
 // import { Divider, Typography } from "@mui/material";
 
 const ListSearch = () => {
   const [inputValue, setInputValue] = useState("");
-  const { data: singleProduct } = useGetProductWithSearchQuery(inputValue);
+  const debouncedValue = useDebounce<string>(inputValue, 500);
+  const { data } = useGetProductWithSearchQuery(debouncedValue);
+  const htmlRef = useRef<HTMLDivElement>(null);
 
-  // const handleChangeInput = (
-  //   e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  // ) => {
-  //   setInputValue(e.target.value);
-  // };
+  const productList = useMemo(() => {
+    if (data) {
+      return data.map((option) => option.title);
+    }
+    return [];
+  }, []);
+
+  const handleFocus = () => {
+    // console.log("htmlRef", htmlRef.current);
+    if (htmlRef.current) {
+      htmlRef.current.focus();
+    }
+  };
 
   return (
     <>
@@ -25,18 +36,23 @@ const ListSearch = () => {
           freeSolo
           sx={{ width: "50rem" }}
           disableClearable
-          options={singleProduct?.map((option) => option.title) || [""]}
-          renderInput={(params) => (
-            <TextField
-              {...params}
-              label="Tìm kiếm sản phẩm..."
-              InputProps={{
-                ...params.InputProps,
-              }}
-            />
-          )}
+          options={productList}
+          renderInput={(params) => {
+            setInputValue(String(params.inputProps.value));
+            return (
+              <TextField
+                {...params}
+                label="Tìm kiếm sản phẩm..."
+                InputProps={{
+                  ...params.InputProps,
+                }}
+                inputRef={htmlRef}
+              />
+            );
+          }}
         />
         <Button
+          onClick={handleFocus}
           variant="text"
           sx={{
             height: "57px",

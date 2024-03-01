@@ -10,7 +10,6 @@ import Grid from "@mui/material/Grid";
 
 const BoardItem = () => {
   const { data } = useGetProductItemQuery();
-  // console.log(data);
   const dispatch = useDispatch();
 
   const handleAddToCart = ({
@@ -20,10 +19,13 @@ const BoardItem = () => {
     quantity,
     totalPrice,
     price,
+    brand,
   }: IProductsData) => {
     // console.log("he;o", id);
 
-    dispatch(addToCart({ id, title, image, quantity, totalPrice, price }));
+    dispatch(
+      addToCart({ id, title, image, quantity, totalPrice, price, brand })
+    );
   };
 
   return (
@@ -71,6 +73,7 @@ const BoardItem = () => {
                       quantity: item.quantity,
                       totalPrice: item.totalPrice,
                       price: item.price,
+                      brand: item.brand,
                     })
                   }
                   // variant="outlined"
@@ -88,7 +91,6 @@ const BoardItem = () => {
             </Box>
           </Grid>
         ))}
-      {/* Cart  */}
     </>
   );
 };

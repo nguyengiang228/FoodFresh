@@ -23,8 +23,11 @@ const CartList = () => {
     quantity,
     totalPrice,
     price,
+    brand,
   }: IProductsData) => {
-    dispatch(addToCart({ id, title, image, quantity, totalPrice, price }));
+    dispatch(
+      addToCart({ id, title, image, quantity, totalPrice, price, brand })
+    );
   };
   const handleSubtractCard = ({ id, quantity, totalPrice }: CartList) => {
     dispatch(subtractCart({ id, quantity, totalPrice }));
@@ -120,6 +123,7 @@ const CartList = () => {
                             quantity: item.quantity,
                             totalPrice: item.totalPrice,
                             price: item.price,
+                            brand: item.brand,
                           })
                         }
                       >

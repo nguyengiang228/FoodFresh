@@ -11,6 +11,7 @@ export interface IProducts {
   name: string;
   price: number;
   discount: number;
+  brand: string;
 }
 export interface Cart {
   id: number;
@@ -30,9 +31,13 @@ export interface IProductsData {
   quantity: number;
   totalPrice: number;
   price: number;
+  brand: string;
 }
 
 export interface IProductsSearch {
-  // id?: number;
   title: string;
+}
+
+export interface IChecked extends IProducts {
+  brand: string;
 }

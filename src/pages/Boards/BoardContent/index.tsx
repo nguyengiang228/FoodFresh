@@ -5,6 +5,7 @@ import BoardItem from "~/component/BoardContent/BoardItem";
 import { Button, Typography } from "@mui/material";
 import { red, green } from "@mui/material/colors";
 import PostRecipe from "~/pages/HomePage/Component/Post";
+
 const BoardContent = () => {
   return (
     <Box pl={8}>

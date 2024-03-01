@@ -15,7 +15,7 @@ const AppBar = () => {
   return (
     <>
       <Box
-        px={45}
+        px={50}
         sx={{
           height: "70px",
           width: "100%",
@@ -31,7 +31,7 @@ const AppBar = () => {
           <SvgIcon
             component={LogoIcon}
             inheritViewBox
-            sx={{ width: "13vw", height: "25vh" }}
+            sx={{ width: "8vw", height: "15vh" }}
           />
         </Box>
         <Box

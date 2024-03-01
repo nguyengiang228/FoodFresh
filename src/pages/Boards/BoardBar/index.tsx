@@ -30,13 +30,16 @@ const BoardBar = () => {
         <NavLink style={{ textDecoration: "none", color: "black" }} to="/">
           Trang chủ
         </NavLink>
-        <NavLink style={{ textDecoration: "none", color: "black" }} to="/">
+        <NavLink
+          style={{ textDecoration: "none", color: "black" }}
+          to="/products"
+        >
           Sản phẩm
         </NavLink>
-        <NavLink style={{ textDecoration: "none", color: "black" }} to="/">
+        <NavLink style={{ textDecoration: "none", color: "black" }} to="/news">
           Tin tức
         </NavLink>
-        <NavLink style={{ textDecoration: "none", color: "black" }} to="/">
+        <NavLink style={{ textDecoration: "none", color: "black" }} to="/about">
           Giới thiệu
         </NavLink>
       </Box>

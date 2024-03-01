@@ -10,7 +10,6 @@ const BoardCategories = () => {
         width: "100%",
         display: "flex",
         alignItems: "center",
-        mt: 15,
       }}
     >
       Board Categories

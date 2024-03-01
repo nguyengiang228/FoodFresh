@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 
 const PostRecipe = () => {
   const { data } = useGetPostRecipeQuery();
-  console.log(data);
+  // console.log(data);
   return (
     <>
       {data &&
