@@ -1,11 +1,10 @@
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-import { useGetPostRecipeQuery } from "~/redux/api/api.caller";
 import Typography from "@mui/material/Typography";
+import { useGetPostRecipeQuery } from "~/redux/api/api.caller";
 
 const PostRecipe = () => {
   const { data } = useGetPostRecipeQuery();
-  // console.log(data);
   return (
     <>
       {data &&

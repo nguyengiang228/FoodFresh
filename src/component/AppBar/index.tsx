@@ -22,7 +22,6 @@ const AppBar = () => {
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
-          // position: "fixed",
           bgcolor: "white",
           borderBottom: "1px solid #bdbdbd",
         }}

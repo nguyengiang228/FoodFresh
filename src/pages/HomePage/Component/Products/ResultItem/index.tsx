@@ -1,9 +1,9 @@
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import ListItem from "./ListItem";
-import { IProducts } from "~/interfaces/products";
+import { IListItem } from "~/interfaces/handleCheck";
 
-const ResultProductItem = ({ itemBrand }: { itemBrand: IProducts[] }) => {
+const ResultProductItem = ({ itemBrand, checked }: IListItem) => {
   return (
     <Box
       sx={{
@@ -29,7 +29,7 @@ const ResultProductItem = ({ itemBrand }: { itemBrand: IProducts[] }) => {
       </Box>
       <Box>
         <Grid container spacing={{ xs: 2 }}>
-          <ListItem itemBrand={itemBrand} />
+          <ListItem checked={checked} itemBrand={itemBrand} />
         </Grid>
       </Box>
     </Box>

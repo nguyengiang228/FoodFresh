@@ -7,7 +7,6 @@ import Box from "@mui/material/Box";
 
 import { Autocomplete } from "@mui/material";
 import { useDebounce } from "~/hooks";
-// import { Divider, Typography } from "@mui/material";
 
 const ListSearch = () => {
   const [inputValue, setInputValue] = useState("");
@@ -45,6 +44,7 @@ const ListSearch = () => {
                 label="Tìm kiếm sản phẩm..."
                 InputProps={{
                   ...params.InputProps,
+                  type: "search",
                 }}
                 inputRef={htmlRef}
               />

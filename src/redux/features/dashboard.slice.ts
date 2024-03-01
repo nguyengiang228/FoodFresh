@@ -115,6 +115,7 @@ export const cartSlice = createSlice({
       const searchItem = state.cartItem.filter((item) => item.title === title);
       state.cartItem = searchItem;
     },
+
     filterItem: (state, action: PayloadAction<IChecked>) => {
       const { brand } = action.payload;
       const filterItem = state.cartItem.filter((item) => item.brand === brand);

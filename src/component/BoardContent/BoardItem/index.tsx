@@ -1,15 +1,17 @@
-import { useGetProductItemQuery } from "~/redux/api/api.caller";
 import Box from "@mui/material/Box";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { useDispatch } from "react-redux";
 import { addToCart } from "~/redux/features/dashboard.slice";
-import { IProductsData } from "~/interfaces/products";
+import { IProducts, IProductsData } from "~/interfaces/products";
 import Grid from "@mui/material/Grid";
 
-const BoardItem = () => {
-  const { data } = useGetProductItemQuery();
+export interface IProductdata {
+  productValue: IProducts[];
+}
+
+const BoardItem = ({ productValue }: IProductdata) => {
   const dispatch = useDispatch();
 
   const handleAddToCart = ({
@@ -30,8 +32,8 @@ const BoardItem = () => {
 
   return (
     <>
-      {data &&
-        data.map((item, index) => (
+      {productValue &&
+        productValue.map((item, index) => (
           <Grid key={index} item xs={2} md={2}>
             <Box
               sx={{

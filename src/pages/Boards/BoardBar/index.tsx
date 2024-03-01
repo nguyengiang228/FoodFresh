@@ -1,6 +1,7 @@
 import Box from "@mui/material/Box";
 import Workspaces from "~/component/AppBar/Menu/workspaces";
 import { NavLink } from "react-router-dom";
+import { Button } from "@mui/material";
 
 const BoardBar = () => {
   return (
@@ -17,9 +18,6 @@ const BoardBar = () => {
     >
       <Box
         sx={{
-          display: "flex",
-          alignItems: "center",
-          // width: "10rem",
           pl: "5px",
         }}
       >
@@ -27,21 +25,64 @@ const BoardBar = () => {
       </Box>
 
       <Box sx={{ display: "flex", gap: "80px" }}>
-        <NavLink style={{ textDecoration: "none", color: "black" }} to="/">
-          Trang chủ
-        </NavLink>
-        <NavLink
-          style={{ textDecoration: "none", color: "black" }}
-          to="/products"
+        <Button
+          sx={{
+            width: "7rem",
+            "&:hover": {
+              bgcolor: "primary.light",
+            },
+          }}
         >
-          Sản phẩm
-        </NavLink>
-        <NavLink style={{ textDecoration: "none", color: "black" }} to="/news">
-          Tin tức
-        </NavLink>
-        <NavLink style={{ textDecoration: "none", color: "black" }} to="/about">
-          Giới thiệu
-        </NavLink>
+          <NavLink style={{ textDecoration: "none", color: "black" }} to="/">
+            Trang chủ
+          </NavLink>
+        </Button>
+
+        <Button
+          sx={{
+            width: "7rem",
+            "&:hover": {
+              bgcolor: "primary.light",
+            },
+          }}
+        >
+          <NavLink
+            style={{ textDecoration: "none", color: "black" }}
+            to="/products"
+          >
+            Sản phẩm
+          </NavLink>
+        </Button>
+        <Button
+          sx={{
+            width: "7rem",
+            "&:hover": {
+              bgcolor: "primary.light",
+            },
+          }}
+        >
+          <NavLink
+            style={{ textDecoration: "none", color: "black" }}
+            to="/news"
+          >
+            Tin tức
+          </NavLink>
+        </Button>
+        <Button
+          sx={{
+            width: "7rem",
+            "&:hover": {
+              bgcolor: "primary.light",
+            },
+          }}
+        >
+          <NavLink
+            style={{ textDecoration: "none", color: "black" }}
+            to="/about"
+          >
+            Giới thiệu
+          </NavLink>
+        </Button>
       </Box>
     </Box>
   );
