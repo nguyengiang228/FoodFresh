@@ -19,7 +19,7 @@ const ListSearch = () => {
       return data.map((option) => option.title);
     }
     return [];
-  }, []);
+  }, [data]);
 
   const handleFocus = () => {
     // console.log("htmlRef", htmlRef.current);
@@ -37,11 +37,12 @@ const ListSearch = () => {
           disableClearable
           options={productList}
           renderInput={(params) => {
-            setInputValue(String(params.inputProps.value));
+            // setInputValue(String(params.inputProps.value));
             return (
               <TextField
                 {...params}
                 label="Tìm kiếm sản phẩm..."
+                onChange={(e) => setInputValue(e.target.value)}
                 InputProps={{
                   ...params.InputProps,
                   type: "search",

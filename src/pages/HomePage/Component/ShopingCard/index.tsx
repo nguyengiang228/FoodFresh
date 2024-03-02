@@ -4,9 +4,7 @@ import Box from "@mui/material/Box";
 import Tooltip from "@mui/material/Tooltip";
 import IconButton from "@mui/material/IconButton";
 import Menu from "@mui/material/Menu";
-
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
-
 import CartList from "~/component/AppBar/Menu/cartList";
 import Divider from "@mui/material/Divider";
 import Typography from "@mui/material/Typography";

@@ -1,5 +1,6 @@
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
+import { NavLink } from "react-router-dom";
 
 import BoardItem from "~/component/BoardContent/BoardItem";
 import { Button, Typography } from "@mui/material";
@@ -74,7 +75,16 @@ const BoardContent = () => {
               }}
             >
               <Button variant="outlined">
-                <Typography variant="body1">Xem thêm...</Typography>
+                <NavLink
+                  to="/products"
+                  style={{
+                    textDecoration: "none",
+                    color: "#00a3ba",
+                    fontSize: 15,
+                  }}
+                >
+                  Xem thêm...
+                </NavLink>
               </Button>
             </Box>
             <Box
@@ -121,7 +131,16 @@ const BoardContent = () => {
               }}
             >
               <Button variant="outlined">
-                <Typography variant="body1">Xem thêm...</Typography>
+                <NavLink
+                  to="/products"
+                  style={{
+                    textDecoration: "none",
+                    color: "#00a3ba",
+                    fontSize: 15,
+                  }}
+                >
+                  Xem thêm...
+                </NavLink>
               </Button>
             </Box>
             <Box sx={{ width: "100%", height: "35vh" }}>
@@ -142,7 +161,16 @@ const BoardContent = () => {
           </Box>
         </Box>
       ) : (
-        <>Loading...</>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            width: "100%",
+            fontSize: "2rem",
+          }}
+        >
+          Loading...
+        </Box>
       )}
     </>
   );
