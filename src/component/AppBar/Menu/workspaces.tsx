@@ -59,12 +59,11 @@ const Workspaces = () => {
                   <MenuItem key={index} onClick={handleClose}>
                     <img
                       src={item.image}
-                      alt="/"
                       style={{ width: 20, height: 20, marginRight: 5 }}
                     />
                     <NavLink
                       style={{ textDecoration: "none", color: "black" }}
-                      to="/"
+                      to="/products"
                     >
                       {item.title}
                     </NavLink>

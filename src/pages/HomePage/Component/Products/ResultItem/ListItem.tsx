@@ -7,10 +7,11 @@ import { useDispatch } from "react-redux";
 import { addToCart } from "~/redux/features/dashboard.slice";
 import { IProductsData } from "~/interfaces/products";
 import { IListItem } from "~/interfaces/handleCheck";
+import { useNavigate } from "react-router-dom";
 
 const ListItem = ({ valueItem }: IListItem) => {
   const dispatch = useDispatch();
-
+  const navigate = useNavigate();
   const handleAddToCart = ({
     id,
     title,
@@ -24,6 +25,10 @@ const ListItem = ({ valueItem }: IListItem) => {
       addToCart({ id, title, image, quantity, totalPrice, price, brand })
     );
   };
+
+  const handleNavigateChild = (id: number) => {
+    navigate(`/products/${id}`);
+  };
   return (
     <>
       {valueItem.length &&
@@ -34,10 +39,13 @@ const ListItem = ({ valueItem }: IListItem) => {
                 width: 170,
                 height: 272,
                 m: 2,
+                color: "black",
+                textDecoration: "none",
                 border: "1px solid #c3c3c3",
                 overflow: "hidden",
                 cursor: "pointer",
               }}
+              onClick={() => handleNavigateChild(item.id)}
             >
               <img style={{ width: 168, height: "auto" }} src={item.image} />
               <Typography

@@ -12,6 +12,7 @@ export interface IProducts {
   price: number;
   discount: number;
   brand: string;
+  type: string;
 }
 export interface Cart {
   id: number;

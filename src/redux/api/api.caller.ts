@@ -87,6 +87,17 @@ export const apiCaller = createApi({
       },
       providesTags: [{ type: "Posts" }],
     }),
+
+    getProductById: builder.query<IProducts[], { id: number }>({
+      query(data) {
+        return {
+          url: `/products/${data.id}`,
+          method: "GET",
+        };
+      },
+    }),
+
+    //Hook Search
     getProductWithSearch: builder.query<IProducts[], string>({
       query: (item) => `/products?q=${item}`,
       providesTags: [{ type: "Posts" }],
@@ -113,6 +124,7 @@ export const {
   useDeleteExampleMutation,
   useGetCategoryQuery,
   useGetProductItemQuery,
+  useGetProductByIdQuery,
   useGetProductWithSearchQuery,
   useGetPostRecipeQuery,
 } = apiCaller;

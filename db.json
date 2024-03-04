@@ -171,6 +171,7 @@
       "image": "https://product.hstatic.net/200000460455/product/toi_xay_4bd4284a234a4b119cf0ef3959247f79_master.png",
       "quantity": 100,
       "price": 10.000,
+      "type": "juiceFresh",
       "discount": 20,
       "brand": "VietNam"
     },
@@ -184,6 +185,7 @@
       "image": "https://product.hstatic.net/200000460455/product/ba_roi_heo_4de6644e10244b75a09a540e39029ac2_799f6bf93f9c436da841a50486170291_master.jpg",
       "price": 127.500,
       "quantity": 100,
+      "type": "meatFresh",
       "discount": 30,
       "brand": "VietNam"
     },
@@ -197,6 +199,7 @@
       "image": "https://product.hstatic.net/200000460455/product/tao_jaban_bbq_40g_50_c95b25e4505c47bca2c3127d15e4e250_large.png",
       "price": 50.000,
       "quantity": 200,
+      "type": "seaFoodFresh",
       "discount": 10,
       "brand": "VietNam"
     },
@@ -210,6 +213,7 @@
       "image": "https://product.hstatic.net/200000460455/product/toi_xay_4bd4284a234a4b119cf0ef3959247f79_master.png",
       "price": 10.000,
       "quantity": 300,
+      "type": "juiceFresh",
       "discount": 20,
       "brand": "VietNam"
     },
@@ -223,6 +227,7 @@
       "image": "https://product.hstatic.net/200000460455/product/ba_roi_heo_4de6644e10244b75a09a540e39029ac2_799f6bf93f9c436da841a50486170291_master.jpg",
       "price": 127.500,
       "quantity": 400,
+      "type": "meatFresh",
       "discount": 30,
       "brand": "VietNam"
     },
@@ -236,6 +241,7 @@
       "image": "https://product.hstatic.net/200000460455/product/tao_jaban_bbq_40g_50_c95b25e4505c47bca2c3127d15e4e250_large.png",
       "price": 50.000,
       "quantity": 200,
+      "type": "seaFoodFresh",
       "discount": 10,
       "brand": "VietNam"
     },
@@ -249,6 +255,7 @@
       "image": "https://product.hstatic.net/200000460455/product/toi_xay_4bd4284a234a4b119cf0ef3959247f79_master.png",
       "quantity": 100,
       "price": 10.000,
+      "type": "juiceFresh",
       "discount": "-20%",
       "brand": "VietNam"
     },
@@ -262,6 +269,7 @@
       "image": "https://product.hstatic.net/200000460455/product/ba_roi_heo_4de6644e10244b75a09a540e39029ac2_799f6bf93f9c436da841a50486170291_master.jpg",
       "price": 127.500,
       "quantity": 100,
+      "type": "meatFresh",
       "discount": 30,
       "brand": "USA"
     },
@@ -275,6 +283,7 @@
       "image": "https://product.hstatic.net/200000460455/product/tao_jaban_bbq_40g_50_c95b25e4505c47bca2c3127d15e4e250_large.png",
       "price": 50.000,
       "quantity": 200,
+      "type": "juiceFresh",
       "discount": 10,
       "brand": "USA"
     },
@@ -288,6 +297,7 @@
       "image": "https://product.hstatic.net/200000460455/product/toi_xay_4bd4284a234a4b119cf0ef3959247f79_master.png",
       "price": 10.000,
       "quantity": 300,
+      "type": "juiceFresh",
       "discount": 20,
       "brand": "USA"
     },
@@ -301,6 +311,7 @@
       "image": "https://product.hstatic.net/200000460455/product/ba_roi_heo_4de6644e10244b75a09a540e39029ac2_799f6bf93f9c436da841a50486170291_master.jpg",
       "price": 127.500,
       "quantity": 400,
+      "type": "meatFresh",
       "discount": 30,
       "brand": "USA"
     },
@@ -314,6 +325,7 @@
       "image": "https://product.hstatic.net/200000460455/product/tao_jaban_bbq_40g_50_c95b25e4505c47bca2c3127d15e4e250_large.png",
       "price": 50.000,
       "quantity": 200,
+      "type": "meatFresh",
       "discount": 10,
       "brand": "Other"
     }
@@ -322,17 +334,22 @@
     {
       "id": 1,
       "image": "https://file.hstatic.net/200000460455/file/fruit_26457412cf6f43c9ae38e70562c3c071.png",
-      "title": "Trái Cây Tươi"
+      "title": "Trái Cây Tươi",
+      "type": "juiceFresh"
     },
     {
       "id": 2,
       "image": "https://file.hstatic.net/200000460455/file/meats_acf6cdd07dc447318bf93d52317a1d6a.png",
-      "title": "Thịt Các Loại"
+      "title": "Thịt Các Loại",
+      "type": "meatFresh"
+
     },
     {
       "id": 3,
       "image": "https://file.hstatic.net/200000460455/file/seafood_e0c737bd6fde489e91014e61cdf54b32.png",
-      "title": "Hải Sản Tươi Sống"
+      "title": "Hải Sản Tươi Sống",
+      "type": "seaFoodFresh"
+
     },
     {
       "id": 4,

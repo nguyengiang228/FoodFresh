@@ -2,8 +2,10 @@ import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import ListItem from "./ListItem";
 import { IListItem } from "~/interfaces/handleCheck";
+import CategoriesFilter from "../FilterTypeItem";
+import { Divider } from "@mui/material";
 
-const ResultProductItem = ({ valueItem }: IListItem) => {
+const ResultProductItem = ({ valueItem, setValueItem }: IListItem) => {
   return (
     <Box
       sx={{
@@ -19,17 +21,19 @@ const ResultProductItem = ({ valueItem }: IListItem) => {
         sx={{
           display: "flex",
           width: "100%",
-          height: "7%",
-          bgcolor: "primary.light",
+          height: "9vh",
+          // bgcolor: "white",
           alignItems: "center",
-          p: 2,
+          p: 1,
+          justifyContent: "right",
         }}
       >
-        Categories
+        <CategoriesFilter valueItem={valueItem} setValueItem={setValueItem} />
       </Box>
-      <Box>
+      <Divider />
+      <Box sx={{ mt: 2 }}>
         <Grid container spacing={{ xs: 2 }}>
-          <ListItem valueItem={valueItem} />
+          <ListItem valueItem={valueItem} setValueItem={setValueItem} />
         </Grid>
       </Box>
     </Box>

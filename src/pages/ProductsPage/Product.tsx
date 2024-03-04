@@ -6,13 +6,13 @@ import { useGetProductItemQuery } from "~/redux/api/api.caller";
 import { IProducts } from "~/interfaces/products";
 import ResultProductItem from "../HomePage/Component/Products/ResultItem";
 import { listBrand } from "./config";
-import CheckedPrice from "../HomePage/Component/Products/CheckIProductItem";
+import CheckedPrice from "../HomePage/Component/Products/CheckIProductItem/CheckboxPrice";
 
 const Products = () => {
   const [valueItem, setValueItem] = useState<IProducts[]>([]);
   const [ValueChecked, setValueChecked] = useState<string[]>([]);
   const { data } = useGetProductItemQuery();
-  const [checked, setChecked] = useState([false, false, false]);
+  const [checked, setChecked] = useState([true, true, true]);
 
   //setBrand nếu Có data thì itemBrand = data
   useEffect(() => {
@@ -115,7 +115,10 @@ const Products = () => {
               </Box>
               <CheckedPrice valueItem={valueItem} setValueItem={setValueItem} />
             </Box>
-            <ResultProductItem valueItem={valueItem} />
+            <ResultProductItem
+              valueItem={valueItem}
+              setValueItem={setValueItem}
+            />
           </Box>
         </>
       ) : (

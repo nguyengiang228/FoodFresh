@@ -6,7 +6,7 @@ import BoardContent from "./pages/Boards/BoardContent";
 import NoPage from "./pages/NoPage";
 import NewsPage from "./pages/NewsPage/news";
 import IntroductPage from "./pages/IntroductPage";
-
+import ChildPage from "./pages/ChildPage";
 function App() {
   return (
     <Routes>
@@ -15,6 +15,7 @@ function App() {
       <Route path="/" element={<Board />}>
         <Route index path="/" element={<BoardContent />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/products/:id" element={<ChildPage />} />
         <Route path="/news" element={<NewsPage />} />
         <Route path="/about" element={<IntroductPage />} />
       </Route>
