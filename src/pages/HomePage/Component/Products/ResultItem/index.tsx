@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import ListItem from "./ListItem";
 import { IListItem } from "~/interfaces/handleCheck";
 
-const ResultProductItem = ({ itemBrand, checked }: IListItem) => {
+const ResultProductItem = ({ valueItem }: IListItem) => {
   return (
     <Box
       sx={{
@@ -29,7 +29,7 @@ const ResultProductItem = ({ itemBrand, checked }: IListItem) => {
       </Box>
       <Box>
         <Grid container spacing={{ xs: 2 }}>
-          <ListItem checked={checked} itemBrand={itemBrand} />
+          <ListItem valueItem={valueItem} />
         </Grid>
       </Box>
     </Box>

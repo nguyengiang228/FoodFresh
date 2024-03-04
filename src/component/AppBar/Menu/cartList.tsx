@@ -113,7 +113,7 @@ const CartList = () => {
               <Box key={index} sx={{ display: "flex", pl: 3 }}>
                 <FormControlLabel
                   name="id"
-                  label={item.id}
+                  label="|"
                   control={
                     <Checkbox
                       checked={checked[index]}

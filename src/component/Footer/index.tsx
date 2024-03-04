@@ -10,13 +10,15 @@ import MailIcon from "@mui/icons-material/Mail";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import { Link } from "react-router-dom";
+import { DivStyled } from "./styled";
 
 const bgColor = grey[200];
 
 const Footer = () => {
   return (
     <Box
-      px={50}
+      pl={50}
+      pr={41}
       sx={{
         display: "flex",
         justifyContent: "space-between",
@@ -32,6 +34,7 @@ const Footer = () => {
 
           width: 300,
           mr: 2,
+          ml: 1,
         }}
       >
         <SvgIcon
@@ -61,42 +64,44 @@ const Footer = () => {
       </Box>
       <Box pt={8} sx={{ textAlign: "center" }}>
         <Typography variant="h5"> Hệ thống cửa hàng</Typography>
-        <img
-          style={{ width: 120, paddingTop: 20 }}
-          src="https://file.hstatic.net/200000460455/file/map_fcd79b482a614d2a99822d0b2c5d3567.png"
-        />
+        <Link to="/">
+          <img
+            style={{ width: 120, paddingTop: 20 }}
+            src="https://file.hstatic.net/200000460455/file/map_fcd79b482a614d2a99822d0b2c5d3567.png"
+          />
+        </Link>
       </Box>
       <Box pt={8} sx={{}}>
         <Typography variant="h5">Hỗ trợ khách hàng</Typography>
         <ul>
           <li>
             <Link style={{ textDecoration: "none", color: "black" }} to="/">
-              Giới thiệu
+              <DivStyled>Giới thiệu</DivStyled>
             </Link>
           </li>
           <li>
             <Link style={{ textDecoration: "none", color: "black" }} to="/">
-              Liên hệ
+              <DivStyled>Liên hệ</DivStyled>
             </Link>
           </li>
           <li>
             <Link style={{ textDecoration: "none", color: "black" }} to="/">
-              Chính sách đổi trả
+              <DivStyled>Chính sách đổi trả</DivStyled>
             </Link>
           </li>
           <li>
             <Link style={{ textDecoration: "none", color: "black" }} to="/">
-              Chính sách bảo mật
+              <DivStyled>Chính sách bảo mật</DivStyled>
             </Link>
           </li>
           <li>
             <Link style={{ textDecoration: "none", color: "black" }} to="/">
-              Chính sách giao hàng
+              <DivStyled>Chính sách giao hàng</DivStyled>
             </Link>
           </li>
         </ul>
       </Box>
-      <Box pt={8}>
+      <Box pt={8} sx={{ mr: 0 }}>
         <Typography variant="h5"> Liên hệ chúng tôi </Typography>
         <Box pt={2} sx={{ display: "flex", justifyContent: "space-around" }}>
           <CallOutlinedIcon fontSize="large" />

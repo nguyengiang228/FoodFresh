@@ -33,7 +33,7 @@ const ListSearch = () => {
       <Box sx={{ display: "flex" }}>
         <Autocomplete
           freeSolo
-          sx={{ width: "50rem" }}
+          sx={{ width: "49rem" }}
           disableClearable
           options={productList}
           renderInput={(params) => {

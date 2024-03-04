@@ -1,94 +1,97 @@
+import { ListPrice } from "~/pages/ProductsPage/config";
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
-import FormGroup from "@mui/material/FormGroup";
+import Checkbox from "@mui/material/Checkbox";
 import FormControlLabel from "@mui/material/FormControlLabel";
-import { Checkbox } from "@mui/material";
-// import { useGetProductItemQuery } from "~/redux/api/api.caller";
+import { useState } from "react";
+import { IPriceCheckbox } from "./interface";
+import { useGetProductItemQuery } from "~/redux/api/api.caller";
 
-const CheckProduct = () => {
-  // const { data } = useGetProductItemQuery();
+const CheckedPrice = ({ setValueItem }: IPriceCheckbox) => {
+  const { data } = useGetProductItemQuery();
+  const [ValueChecked, setValueChecked] = useState<string[]>([]);
 
-  const handleCheck = (e: React.ChangeEvent<HTMLInputElement>) => {
-    console.log(e.target.checked);
+  const [checkedPrice, setCheckedPrice] = useState([false, false, false]);
 
-    // if (e.target.checked) {
-    //   const result = data?.filter((item) => item.brand === "vn");
-    //   return result;
-    //   // console.log(result);
-    // }
+  const handleCheckboxSelected = (checkedArray: Array<string>) => {
+    const listChecked = [
+      checkedArray.includes(ListPrice[0].priceItem),
+      checkedArray.includes(ListPrice[1].priceItem),
+      checkedArray.includes(ListPrice[2].priceItem),
+    ];
+    // console.log(listChecked);
+
+    setCheckedPrice(listChecked);
+    if (data) {
+      const result = data.filter((item) =>
+        checkedArray.includes(String(item.price.toFixed(3)))
+      );
+      setValueItem(result);
+      // console.log(result);
+    }
+    setValueChecked(checkedArray);
+  };
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement>,
+    key: string
+  ) => {
+    if (data) {
+      if (e.target.checked) {
+        const checkedArray = Array.from(new Set([...ValueChecked, key]));
+        handleCheckboxSelected(checkedArray);
+      } else {
+        const checkedArray = ValueChecked.filter((item) => item !== key);
+        handleCheckboxSelected(checkedArray);
+      }
+    }
+  };
+
+  const handleChange1 = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setCheckedPrice([e.target.checked, e.target.checked, e.target.checked]);
+    if (e.target.checked) {
+      if (data) setValueItem(data);
+    } else {
+      if (data) setValueItem(data);
+    }
   };
 
   return (
-    <>
-      <Box
-        sx={{
-          width: "20%",
-          height: "50%",
-          m: 2,
-          bgcolor: "#eeeeee",
-          borderRadius: 3,
-        }}
-      >
-        <Box sx={{ p: 2 }}>
-          <Typography sx={{ pl: "2rem", fontWeight: "bold" }}>
-            Thương hiệu
-          </Typography>
-          <FormGroup>
-            <FormControlLabel
-              control={<Checkbox onChange={handleCheck} value="vn" />}
-              label="Việt Nam"
-            />
-          </FormGroup>
-          <FormGroup>
-            <FormControlLabel
-              control={<Checkbox onChange={handleCheck} value="usa" />}
-              label="Úc - Mỹ"
-            />
-          </FormGroup>
-          <FormGroup>
-            <FormControlLabel
-              control={<Checkbox onChange={handleCheck} value="other" />}
-              label="Khác"
-            />
-          </FormGroup>
-        </Box>
+    <Box
+      sx={{
+        p: 2,
+        mt: 5,
+        borderTopLeftRadius: 3,
+        borderTopRightRadius: 3,
+        bgcolor: "#eeeeee",
+      }}
+    >
+      <FormControlLabel
+        label="Giá "
+        control={
+          <Checkbox
+            checked={checkedPrice[0] && checkedPrice[1] && checkedPrice[2]}
+            onChange={handleChange1}
+          />
+        }
+      />
 
-        {/* <Box sx={{ p: 2 }}>
-          <Typography sx={{ pl: "2rem", fontWeight: "bold" }}>Loại</Typography>
-          <FormGroup>
-            <FormControlLabel control={<Checkbox />} label="item1" />
-          </FormGroup>
-          <FormGroup>
-            <FormControlLabel
-              control={<Checkbox defaultChecked />}
-              label="item2"
-            />
-          </FormGroup>
-          <FormGroup>
-            <FormControlLabel control={<Checkbox />} label="item3" />
-          </FormGroup>
-        </Box>
-
-        <Box sx={{ p: 2 }}>
-          <Typography sx={{ pl: "2rem", fontWeight: "bold" }}>
-            Khuyến mãi
-          </Typography>
-          <FormGroup>
-            <FormControlLabel control={<Checkbox />} label="item1" />
-          </FormGroup>
-          <FormGroup>
-            <FormControlLabel control={<Checkbox />} label="item2" />
-          </FormGroup>
-          <FormGroup>
-            <FormControlLabel
-              control={<Checkbox defaultChecked />}
-              label="item3"
-            />
-          </FormGroup>
-        </Box> */}
+      <Box sx={{ display: "flex", flexDirection: "column", ml: 3 }}>
+        {ListPrice.map((price, index) => (
+          <FormControlLabel
+            name="Price"
+            key={index}
+            label={price.priceItem}
+            control={
+              <Checkbox
+                checked={checkedPrice[index]}
+                onChange={(e) => handleChange(e, price.priceItem)}
+              />
+            }
+          />
+        ))}
       </Box>
-    </>
+    </Box>
   );
 };
 
-export default CheckProduct;
+export default CheckedPrice;

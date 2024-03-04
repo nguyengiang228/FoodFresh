@@ -9,6 +9,7 @@ import PostRecipe from "~/pages/HomePage/Component/Post";
 import { useGetProductItemQuery } from "~/redux/api/api.caller";
 import { useEffect, useState } from "react";
 import { IProducts } from "~/interfaces/products";
+// import { ImageBanner } from "./config";
 
 const BoardContent = () => {
   const { data, isLoading } = useGetProductItemQuery();
@@ -28,10 +29,15 @@ const BoardContent = () => {
             px={42}
             sx={{
               // flexGrow: 1,
-              height: "calc(245vh - (32px + 75px + 75px + 55px))",
+              height: "calc(250vh - (32px + 75px + 75px + 55px))",
               width: "100%",
             }}
           >
+            {/* <Box sx={{ mt: 2 }}>
+              {ImageBanner.map((image, index) => (
+                <img style={{ width: "70rem" }} key={index} src={image.url} />
+              ))}
+            </Box> */}
             <Box
               sx={{
                 height: "80vh",

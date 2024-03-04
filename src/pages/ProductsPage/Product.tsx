@@ -6,10 +6,10 @@ import { useGetProductItemQuery } from "~/redux/api/api.caller";
 import { IProducts } from "~/interfaces/products";
 import ResultProductItem from "../HomePage/Component/Products/ResultItem";
 import { listBrand } from "./config";
-// import { listBrand } from "./config";
+import CheckedPrice from "../HomePage/Component/Products/CheckIProductItem";
 
 const Products = () => {
-  const [itemBrand, setItemBrand] = useState<IProducts[]>([]);
+  const [valueItem, setValueItem] = useState<IProducts[]>([]);
   const [ValueChecked, setValueChecked] = useState<string[]>([]);
   const { data } = useGetProductItemQuery();
   const [checked, setChecked] = useState([false, false, false]);
@@ -17,7 +17,7 @@ const Products = () => {
   //setBrand nếu Có data thì itemBrand = data
   useEffect(() => {
     if (data) {
-      setItemBrand(data);
+      setValueItem(data);
     }
   }, [data]);
 
@@ -30,7 +30,8 @@ const Products = () => {
     setChecked(listChecked);
     if (data) {
       const result = data.filter((item) => checkedArray.includes(item.brand));
-      setItemBrand(result);
+      setValueItem(result);
+      // console.log(result);
     }
 
     setValueChecked(checkedArray);
@@ -57,58 +58,66 @@ const Products = () => {
       event.target.checked,
       event.target.checked,
     ]);
+
     if (event.target.checked) {
-      if (data) setItemBrand(data);
+      if (data) setValueItem(data);
     } else {
-      setItemBrand([]);
+      if (data) setValueItem(data);
     }
   };
 
   return (
     <>
       {data ? (
-        <Box pl={52} pr={49} sx={{ width: "100%", display: "flex" }}>
-          <Box
-            sx={{
-              width: "20%",
-              height: "50%",
-              m: 2,
-              bgcolor: "#eeeeee",
-              borderRadius: 3,
-            }}
-          >
-            <Box sx={{ p: 2 }}>
-              <FormControlLabel
-                label="Thương hiệu"
-                control={
-                  <Checkbox
-                    checked={checked[0] && checked[1] && checked[2]}
-                    // indeterminate={checked[0] !== checked[1]}
-                    onChange={handleChange1}
-                  />
-                }
-              />
+        <>
+          <Box pl={50} pr={46} sx={{ width: "100%", display: "flex" }}>
+            <Box
+              sx={{
+                width: "25%",
+                height: "50%",
+                m: 2,
+                borderRadius: 3,
+                overflow: "hidden",
+              }}
+            >
+              <Box
+                sx={{
+                  p: 2,
+                  bgcolor: "#eeeeee",
+                }}
+              >
+                <FormControlLabel
+                  label="Thương hiệu"
+                  control={
+                    <Checkbox
+                      checked={checked[0] && checked[1] && checked[2]}
+                      // indeterminate={checked[0] !== checked[1]}
+                      onChange={handleChange1}
+                    />
+                  }
+                />
 
-              <Box sx={{ display: "flex", flexDirection: "column", ml: 3 }}>
-                {listBrand.map((brand, index) => (
-                  <FormControlLabel
-                    name="Brand"
-                    key={index}
-                    label={brand.label}
-                    control={
-                      <Checkbox
-                        checked={checked[index]}
-                        onChange={(e) => handleChange(e, brand.label)}
-                      />
-                    }
-                  />
-                ))}
+                <Box sx={{ display: "flex", flexDirection: "column", ml: 3 }}>
+                  {listBrand.map((brand, index) => (
+                    <FormControlLabel
+                      name="Brand"
+                      key={index}
+                      label={brand.label}
+                      control={
+                        <Checkbox
+                          checked={checked[index]}
+                          onChange={(e) => handleChange(e, brand.label)}
+                        />
+                      }
+                    />
+                  ))}
+                </Box>
               </Box>
+              <CheckedPrice valueItem={valueItem} setValueItem={setValueItem} />
             </Box>
+            <ResultProductItem valueItem={valueItem} />
           </Box>
-          <></>
-          <ResultProductItem checked={checked} itemBrand={itemBrand} />
-        </Box>
+        </>
       ) : (
         <>Loading...</>
       )}

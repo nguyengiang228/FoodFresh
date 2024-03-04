@@ -8,10 +8,8 @@ import { addToCart } from "~/redux/features/dashboard.slice";
 import { IProductsData } from "~/interfaces/products";
 import { IListItem } from "~/interfaces/handleCheck";
 
-const ListItem = ({ itemBrand, checked }: IListItem) => {
+const ListItem = ({ valueItem }: IListItem) => {
   const dispatch = useDispatch();
-  // console.log(isChecked);
-  // console.log(itemBrand);
 
   const handleAddToCart = ({
     id,
@@ -28,8 +26,8 @@ const ListItem = ({ itemBrand, checked }: IListItem) => {
   };
   return (
     <>
-      {itemBrand.length &&
-        itemBrand.map((item, index) => (
+      {valueItem.length &&
+        valueItem.map((item, index) => (
           <Grid key={index} item>
             <Box
               sx={{
